@@ -23,7 +23,8 @@ public abstract class Profesor extends Persona {
     
     public abstract double importeNomina ();
     
+    @Override
     public String toString () {
-        return "";
+        return this.getNombre() + " " + this.getApellidos();
     }
 }

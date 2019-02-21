@@ -1,6 +1,6 @@
 package mx.uv.fiee.iinf.poo.demos;
 
-public class Persona {
+public class Persona  {
     private String nombre;
     private String apellidos;
     int edad;
