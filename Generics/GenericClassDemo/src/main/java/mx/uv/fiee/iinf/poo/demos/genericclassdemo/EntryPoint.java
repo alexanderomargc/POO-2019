@@ -1,53 +1,23 @@
 package mx.uv.fiee.iinf.poo.demos.genericclassdemo;
 
-import java.util.ArrayList;
-
 public class EntryPoint {
     
     public static void main (String [] args) {
-        ArrayList ar = new ArrayList ();
-        ar.add (1);
-        ar.add (2);
-        ar.add (3);
-        ar.add (4);
-        ar.add (5);
-        ar.add (6);
-        ar.add (7);
-        ar.add (8);
-        ar.add (9);
-        ar.add (10);
+        ObjectList myObjectList = new ObjectList ();
+        myObjectList.add (1);
+        myObjectList.add (new Integer (10));
+        myObjectList.add (new Student ("Obiwan"));
         
-        for (int i = 0; i < ar.size (); i++) {
-            System.out.println (ar.get (i));
-        }      
-        
-        
-        ArrayList<Student> ar2 = new ArrayList ();
-        ar2.add (new Student ("Tyrion"));
-        ar2.add (new Student ("Daenarys"));
-        ar2.add (new Student ("Cersei"));
-        ar2.add (new Student ("John"));
-        ar2.add (new Student ("Sansa"));
-        ar2.add (new Student ("Jaime"));
-        ar2.add (new Student ("Arya"));
-        ar2.add (new Student ("Bran"));
-        
-        for (int i = 0; i < ar2.size (); i++) {
-            System.out.println (ar2.get (i));
-        }
-        
-    }
-    
-}
+        System.out.println (myObjectList.get (0));
+        System.out.println (myObjectList.get (2));
 
-class Student {
-    private String _name;
-    
-    public Student (String name) {
-        _name = name;
+        
+        GenericList<Integer> myGenericList = new GenericList<> ();
+        myGenericList.add (1);
+        myGenericList.add (new Integer (2));
+        
+        System.out.println (myGenericList.get (0));
+        System.out.println (myGenericList.get (1));
     }
     
-    public String getStudent () {
-        return this._name;
-    }
 }
