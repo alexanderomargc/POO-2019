@@ -2,7 +2,7 @@ package mx.uv.fiee.iinf.poo.demos.arraylistgenericdemo;
 
 import java.util.ArrayList;
 
-public class EntryPoint {
+public class Main {
     
     public static void main (String [] args) {
         ArrayList<Integer> ar = new ArrayList<> ();
