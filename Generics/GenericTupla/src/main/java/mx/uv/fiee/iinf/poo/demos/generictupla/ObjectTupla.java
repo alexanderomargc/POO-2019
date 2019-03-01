@@ -1,29 +1,26 @@
 package mx.uv.fiee.iinf.poo.demos.generictupla;
 
-/**
- *
- * @author Gonzalo
- */
 public class ObjectTupla {
-  private final Object first;
-  private final Object second;
-  
-  public ObjectTupla (Object first, Object second) {
-    this.first = first;
-    this.second = second;
-  }
 
-  public Object getFirst () {
-    return first;
-  }
+    private final Object first;
+    private final Object second;
 
-  public Object getSecond () {
-    return second;
-  }
+    public ObjectTupla(Object first, Object second) {
+        this.first = first;
+        this.second = second;
+    }
 
-  @Override
-  public String toString () {
-    return String.format ("(%s, %s)", first.toString (), second.toString ());
-  }
+    public Object getFirst() {
+        return first;
+    }
+
+    public Object getSecond() {
+        return second;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("(%s, %s)", first.toString(), second.toString());
+    }
 
 }
